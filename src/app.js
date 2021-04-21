@@ -1,0 +1,10 @@
+"use strict";
+let snake = new Snake();
+let settings = new Settings();
+let render = new RenderBoard();
+let game=new Game();
+snake.init(settings);
+settings.init();
+render.init(settings, snake);
+game.init(settings, render, snake);
+game.gameStart();
